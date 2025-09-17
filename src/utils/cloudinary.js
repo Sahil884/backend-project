@@ -12,8 +12,8 @@ cloudinary.config({
 const getImagePublicId = (imageUrl) => {
   const UrlArray = imageUrl.split("/");
   const image = UrlArray[UrlArray.length - 1];
-  const publicIId = image.split(".")[0];
-  return publicIId;
+  const publicId = image.split(".")[0];
+  return publicId;
 };
 
 const uploadOnCloudinary = async (localFilePath) => {
